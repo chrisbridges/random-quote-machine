@@ -6,6 +6,7 @@ $(document).ready(function() {
 	function getNewQuote() {
 		$.ajax({
 			url: 'https://api.forismatic.com/api/1.0/',
+			type: 'GET',
 			jsonp: 'jsonp', // needs to be JSONP over JSON to prevent cross-origin issue (CORS)
 			dataType: 'jsonp',
 			data: { //this data is used when making the API request, you can also include this info in 'url'
