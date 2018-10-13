@@ -1,0 +1,23 @@
+
+body, h1, h3, p {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+	background-color: #eae1cc;
+}
+
+.container {
+	text-align: center;
+}
+
+hr {
+	border-top: 1px solid #8c8b8b;
+}
+
+.quote-box {
+	border: 1px dashed black;
+	border-radius: 15px;
+	padding: 10px;
+	margin-bottom: 15px;
+}

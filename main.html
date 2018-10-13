@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Super Dope Random Quotes</title>
+
+		<!-- CSS files -->
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+		integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
+		crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	</head>
+	<body style="background-color: #eae1cc"> <!-- again, only inline styling works -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12"> <!-- I 'believe' this makes it so that it will only take up 12 columns worth of a medium screen space. Everything else will just be margin on the sides -->
+					<h1>Random Quote Machine</h1>
+					<h3>WARNING: These quotes are super dope</h3>
+					<hr style="border-top: 1px solid black"> <!-- only inline styling seems to be working for hr, curious -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="quote-box">
+						<p id="quote"></p>
+						<p id="author"></p>
+					</div>
+					<ul class="list-inline">
+						<li><a href="#" class="btn btn-default btn-lg get-quote"><i class="fa fa-quote-left fa-fw"></i>Get Quote</a></li>
+						<li><a href="#" class="btn btn-default btn-lg share-quote"><i class="fa fa-twitter fa-fw"></i>Share Quote</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script
+		  src="https://code.jquery.com/jquery-2.2.4.min.js"
+		  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		  crossorigin="anonymous"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
