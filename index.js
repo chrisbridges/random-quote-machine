@@ -2,16 +2,18 @@ $(document).ready(function() {
 
 	var quote;
 	var author;
+	/* Documentation: https://forismatic.com/en/api/ */
+	/* API Endpoint - https://api.forismatic.com/api/1.0/ */
 
 	function getNewQuote() {
 		$.ajax({
-			url: 'https://api.forismatic.com/api/1.0/',
-			type: 'GET',
+			url: /* endpoint */ ,
+			type: /* type of request we're making */,
 			jsonp: 'jsonp', // needs to be JSONP over JSON to prevent cross-origin issue (CORS)
 			dataType: 'jsonp',
 			data: { //this data is used when making the API request, you can also include this info in 'url'
-				method: 'getQuote',
-				lang: 'en',
+				method: /* method needed to get the quote */,
+				lang: /* language we would like our quotes in */,
 				format: 'jsonp'
 			},
 			success: function(response) {
